@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Drug, Dosage, Formulation, Bacteria, RenalDose, Indication
+from .models import Drug, Dosage, Formulation, Bacteria, Indication
 
 
 class DrugSerializer(serializers.ModelSerializer):
@@ -9,7 +9,6 @@ class DrugSerializer(serializers.ModelSerializer):
     formulationsIV = serializers.ReadOnlyField()
     formulationsOther = serializers.ReadOnlyField()
     indications = serializers.ReadOnlyField(source="get_indications")
-    renal_dosages = serializers.ReadOnlyField(source="get_renal_dose")
     bacteria = serializers.ReadOnlyField(source="get_bacteria")
 
     class Meta:

@@ -1,0 +1,63 @@
+<div class="row mb-3">
+    <label for="drug_name" class="col-sm-3 col-form-label">Drug Name</label>
+    <div class="col-sm-9"> {{drug_form.drug_name}} </div>
+    {% include 'components/auto_complete.html' %}
+   
+</div>
+
+<div class="row mb-3">
+    <label for="brand_name" class="col-sm-3 col-form-label">Brand Name</label>
+    <div class="col-sm-9"> {{drug_form.brand_name}} </div>
+
+</div>
+
+<div class="row mb-3">
+    <div class="col-sm-10">
+      <div class="form-check form-check-inline">
+      {{drug_form.is_sulfa}}
+            <label class="form-check-label" for="is_sulfa"> Sulfa </label>
+      </div>
+      <div class="form-check form-check-inline">
+        {{drug_form.is_penicillin}}
+              <label class="form-check-label" for="is_penicillin"> Penicillin </label>
+        </div>
+        <div class="form-check form-check-inline">
+            {{drug_form.is_cephalosporin}}
+            <label class="form-check-label" for="is_cephalosporin">
+                Cephalosporin
+              </label>
+        </div>        
+</div>
+</div>
+
+<div class="row mb-3">
+<div class="col-sm-10">
+  <div class="form-check form-check-inline">
+    {{drug_form.hepatic_adjustment}}
+    <label class="form-check-label" for="hepatic_adjustment"> Liver </label>
+  </div>
+  <div class="form-check form-check-inline">
+  {{drug_form.renal_adjustment}}
+        <label class="form-check-label" for="renal_adjustment"> Kidney </label>
+  </div>
+  <div class="form-check form-check-inline">
+    {{drug_form.is_combo}}
+          <label class="form-check-label" for="is_combo"> Combo Drug </label>
+    </div>
+    <div class="form-check form-check-inline">
+        {{drug_form.is_generic}}
+        <label class="form-check-label" for="is_generic"> Generic </label>
+      </div>
+</div>
+</div>
+
+<div class="mb-3 d-none" id="hepatic_box">
+<label for="exampleFormControlTextarea1" class="form-label"> Hepatic Warnings/Adjustment</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div class="mb-3 d-none" id="renal_box">
+<label for="exampleFormControlTextarea1" class="form-label">Renal Warnings/Adjustment</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary float-end">Save</button>

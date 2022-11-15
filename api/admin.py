@@ -14,17 +14,11 @@ class DosageInline(NestedStackedInline):  # level two
     extra = 1
 
 
-class RenalDosageInline(NestedStackedInline):  # level two
-    model = models.RenalDose
-    fk_name = "indication"
-    extra = 1
-
-
 class IndicationInline(NestedStackedInline):  # level one
     model = models.Indication
     extra = 1
     fk_name = "drug"
-    inlines = [DosageInline, RenalDosageInline]
+    inlines = [DosageInline]
 
 
 class DrugAdmin(NestedModelAdmin):  # top level
@@ -36,5 +30,5 @@ admin.site.register(models.Drug, DrugAdmin)
 admin.site.register(models.Formulation)
 admin.site.register(models.Indication)
 admin.site.register(models.Dosage)
-admin.site.register(models.RenalDose)
+
 admin.site.register(models.Bacteria)

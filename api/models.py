@@ -74,6 +74,7 @@ class Drug(TimeStampedModel):
     hepatic_adjustment = models.BooleanField(default=False)
     hepatic_comments = models.TextField(blank=True)
     renal_adjustment = models.BooleanField(default=False)
+    renal_comments = models.TextField(blank=True)
     is_generic = models.BooleanField(default=False)
 
     @property
@@ -128,27 +129,6 @@ class Drug(TimeStampedModel):
         )
 
     @property
-    def get_renal_dose(self):
-        if self.renal_adjustment:
-            dosages = RenalDose.objects.filter(indication__drug=self).values(
-                "indication__name",
-                "crcl_min",
-                "crcl_max",
-                "route",
-                "weight_based_per_dose",
-                "weight_based_freq",
-                "weight_based_dosing_unit",
-                "duration",
-                "duration_unit",
-                "adult_per_dose",
-                "adult_freq",
-                "adult_dose_unit",
-            )
-            return dosages
-        else:
-            return []
-
-    @property
     def get_bacteria(self):
         return Bacteria.objects.filter(possible_drugs=self).values(
             "possible_indications__name", "name", "group"
@@ -192,41 +172,11 @@ class Indication(TimeStampedModel):
     def __str__(self):
         return f"{self.drug} for {self.name}"
 
-    def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.name)
-        return super().save(*args, **kwargs)
-
 
 class Dosage(TimeStampedModel):
     indication = models.ForeignKey(
         Indication, related_name="dosages", on_delete=models.CASCADE
     )
-    route = models.CharField(max_length=2, choices=ROUTE_CHOICES)
-    weight_based_per_dose = models.FloatField()  # 25
-    weight_based_freq = models.IntegerField(help_text="per day")  # 3
-    weight_based_dosing_unit = models.CharField(max_length=50)  # mg/kg
-    duration = models.IntegerField()  # 7
-    duration_unit = models.CharField(max_length=20)  # days
-    adult_per_dose = models.FloatField()  # 500
-    adult_freq = models.IntegerField(help_text="per day")  # 3
-    adult_dose_unit = models.CharField(max_length=20)  # mg
-
-    def __str__(self):
-        # Otitis Media - PO : 25mg/kg 3 times a day for 7 days
-        return f"""
-        {self.indication} - {self.route}: 
-        {self.weight_based_per_dose}{self.weight_based_dosing_unit} {self.weight_based_freq} time/s a day for 
-        {self.duration}{self.duration_unit} 
-        """
-
-
-class RenalDose(TimeStampedModel):
-    indication = models.ForeignKey(
-        Indication, related_name="renal_dosages", on_delete=models.CASCADE
-    )
-    crcl_min = models.IntegerField()
-    crcl_max = models.IntegerField()
     route = models.CharField(max_length=2, choices=ROUTE_CHOICES)
     weight_based_per_dose = models.FloatField()  # 25
     weight_based_freq = models.IntegerField(help_text="per day")  # 3

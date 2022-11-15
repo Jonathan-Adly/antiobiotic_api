@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "nested_inline",
+    "crispy_forms",
+    "crispy_bootstrap5",
     # local
     "accounts",
     "api",
@@ -171,3 +173,7 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 
 # email
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"

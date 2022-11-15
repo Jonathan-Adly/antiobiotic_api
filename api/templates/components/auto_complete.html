@@ -1,0 +1,10 @@
+<div id="autoComplete">
+    {% for med in medications %}
+    <p class="dropdown-item" 
+    _= "on click put me.innerText.toLowerCase() into #drug_name.value then hide #autoComplete">
+        
+        {{med.value}}
+
+    </p>
+    {% endfor %}
+</div>
