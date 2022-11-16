@@ -1,4 +1,4 @@
-{% load crispy_forms_tags %}
+
 
 <!doctype html>
 <html lang="en">
@@ -16,7 +16,7 @@
 
         <div class="container ">
             <div class="row min-vh-100">
-                <div class="col-sm-4 my-auto">
+                <div class="col-sm-3 my-auto">
                     <h2 class="mb-3"> Add New Drug </h2>
                     <form autocomplete="off"> 
                        {% include 'components/drug_form.html' %}
@@ -33,10 +33,11 @@
 
               <div class="vr"></div>
 
-              <div class="col-sm-3 my-auto">
-                <h2 class="mb-3"> Add Dosage </h2>
+              <div class="col-sm-4 my-auto">
+                <h2 class="mb-3"> Add Indications </h2>
                 <form autocomplete="off"> 
-                   {% include 'components/dosage_form.html' %}
+                   {% include 'components/indication_form.html' %}
+              
                 </form> 
             </div>
 

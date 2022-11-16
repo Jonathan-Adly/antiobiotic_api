@@ -1,1 +1,30 @@
-{{form_2}}
+<fieldset {% if 'formulation_enabled' %} disabled {%endif%}>
+<div class="row mb-3">
+    <label for="drug_name" class="col-sm-3 col-form-label">Route</label>
+    <div class="col-sm-9"> {{formulation_form.route}} </div>
+
+   
+</div>
+
+<div class="row mb-3">
+    <label for="brand_name" class="col-sm-3 col-form-label">Label</label>
+    <div class="col-sm-9"> {{formulation_form.label}} </div>
+
+</div>
+
+<div class="row mb-3">
+    <label for="brand_name" class="col-sm-3 col-form-label">Dosage Form</label>
+    <div class="col-sm-9"> {{formulation_form.dosage_form}} </div>
+
+</div>
+
+<div class="row mb-3">
+    <label for="brand_name" class="col-sm-3 col-form-label">Value</label>
+    <div class="col-sm-9"> {{formulation_form.value}} </div>
+    <small> Amount of milligrams (or units) per mL for non-pill, or amount of milligrams per pill </small>
+
+</div>
+
+<button type="submit" class="btn btn-primary float-end" name="save">Save</button>
+<button type="submit" class="btn btn-primary float-start" name="another">Save and add another</button>
+</fieldset> 

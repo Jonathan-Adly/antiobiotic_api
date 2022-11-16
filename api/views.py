@@ -24,7 +24,11 @@ def data_entry(request):
     return render(
         request,
         "data_entry.html",
-        {"drug_form": DrugForm(), "form_2": FormulationForm, "form_3": IndicationForm},
+        {
+            "drug_form": DrugForm(),
+            "formulation_form": FormulationForm(),
+            "indication_form": IndicationForm(),
+        },
     )
 
 

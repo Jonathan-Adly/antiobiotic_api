@@ -1,0 +1,37 @@
+<fieldset {% if 'indication_enabled' %} disabled {%endif%}>
+<div class="row mb-3">
+    <label for="indication" class="col-sm-3 col-form-label">Indications</label>
+    <div class="col-sm-9"> {{indication_form.indication}} </div>
+</div>
+
+
+<div class="row mb-3">
+    <label for="indication_name" class="col-sm-3 col-form-label">Indication Name</label>
+    <div class="col-sm-9"> {{indication_form.indication_name}} 
+        <small> Only if not in list </small>
+    </div>
+   
+</div>
+    
+<div class="row mb-3">
+   <div class="col-sm-3 col-form-label"> {{indication_form.disease_system.label}} </div>
+   <div class="col-sm-9"> 
+   {% for i in indication_form.disease_system %}
+   <div class="form-check form-check-inline"> {{i.tag}} 
+       <label class="form-check-label" for="{{i.id_for_label}}">{{i.choice_label}}</label>     
+   </div>
+   {% endfor %}
+</div>
+</div>
+   
+ 
+
+<div class="mb-3">
+    <label class="col-sm-3 col-form-label"> Comments </label>
+    <div class="col-sm-9"> {{indication_form.comments}} </div>
+</div>
+
+<button type="submit" class="btn btn-primary float-end" name="save">Save</button>
+<button type="submit" class="btn btn-primary float-start" name="another">Save and add another</button>
+
+</fieldset>

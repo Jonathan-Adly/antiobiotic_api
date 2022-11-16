@@ -6,5 +6,3 @@ django-allauth==0.50.0
 environs[django]==9.5.0
 djangorestframework==3.14.0
 django-nested-inline==0.4.5
-django-crispy-forms==1.14
-crispy-bootstrap5==0.7

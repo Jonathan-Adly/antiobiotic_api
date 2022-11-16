@@ -53,11 +53,12 @@
 
 <div class="mb-3 d-none" id="hepatic_box">
 <label for="exampleFormControlTextarea1" class="form-label"> Hepatic Warnings/Adjustment</label>
-<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+{{drug_form.hepatic_comments}}
 </div>
 
 <div class="mb-3 d-none" id="renal_box">
 <label for="exampleFormControlTextarea1" class="form-label">Renal Warnings/Adjustment</label>
-<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+{{drug_form.renal_comments}}
 </div>
-<button type="submit" class="btn btn-primary float-end">Save</button>
+<button type="submit" class="btn btn-primary float-end" name="save">Save</button>
+<button type="submit" class="btn btn-primary float-start" name="another">Save and add another</button>

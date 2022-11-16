@@ -152,22 +152,25 @@ class Formulation(TimeStampedModel):
     dosage_form = models.CharField(max_length=20, choices=DOSAGE_FORM_CHOICES)
     is_pill = models.BooleanField()
     value = models.IntegerField(
-        help_text="amount of milligrams per mL for non-pill, or amount of milligrams per pill"
+        help_text="amount of milligrams/units per mL for non-pill, or amount of milligrams per pill"
     )
 
     def __str__(self):
         return f"{self.drug}: {self.label}"
+
+    def save(self, *args, **kwargs):
+        if self.route in (ORAL, SUBLINGUAL):
+            self.is_pill = True
+        else:
+            self.is_pill = False
+        return super().save(*args, **kwargs)
 
 
 class Indication(TimeStampedModel):
     name = models.CharField(max_length=250)
     drug = models.ForeignKey(Drug, related_name="indications", on_delete=models.CASCADE)
     disease_system = models.CharField(max_length=150)
-    similar_terms = ArrayField(
-        base_field=models.CharField(max_length=100), blank=True, null=True
-    )
     comments = models.TextField(blank=True)
-    virus = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.drug} for {self.name}"

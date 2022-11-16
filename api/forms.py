@@ -45,7 +45,6 @@ class DrugForm(forms.ModelForm):
                     "hx-target": "#autoComplete",
                     "hx-swap": "outerHTML",
                     "hx-trigger": "keyup changed delay:500ms",
-                    "required": "required",
                 }
             ),
             "brand_name": forms.TextInput(
@@ -107,7 +106,10 @@ class DrugForm(forms.ModelForm):
                 }
             ),
             "hepatic_comments": forms.Textarea(
-                attrs={"class": "form-control d-none", "id": "hepatic_comments"}
+                attrs={"class": "form-control", "id": "hepatic_comments", "rows": 3}
+            ),
+            "renal_comments": forms.Textarea(
+                attrs={"class": "form-control", "id": "renal_comments", "rows": 3}
             ),
         }
 
@@ -115,10 +117,64 @@ class DrugForm(forms.ModelForm):
 class FormulationForm(forms.ModelForm):
     class Meta:
         model = Formulation
-        fields = "__all__"
+        fields = ["route", "label", "dosage_form", "value"]
+        widgets = {
+            "route": forms.Select(attrs={"class": "form-select"}),
+            "label": forms.TextInput(
+                attrs={"class": "form-control", "placeholder": "amoxicillin 250mg/5mL"}
+            ),
+            "dosage_form": forms.Select(attrs={"class": "form-select"}),
+            "value": forms.NumberInput(attrs={"class": "form-control"}),
+        }
 
 
-class IndicationForm(forms.ModelForm):
-    class Meta:
-        model = Indication
-        fields = "__all__"
+class IndicationForm(forms.Form):
+
+    INDICATION_CHOICES = list(
+        Indication.objects.all().values_list(
+            "pk",
+            "name",
+        )
+    ) + [(0, "Not in this list")]
+    DISEASE_CHOICES = [
+        ("neuro", "Neuro"),
+        ("heent", "HEENT"),
+        ("ocular", "Ocular"),
+        ("respiratory", "Respiratory"),
+        ("gi", "GI"),
+        ("genital", "Genital"),
+        ("urinary", "Urinary"),
+        ("skin/soft tissue", "Skin/Soft Tissue"),
+        ("msk", "MSK"),
+        ("viral", "Viral"),
+        ("sepsis", "Sepsis"),
+        ("febrile neutropenia", "Febrile Neutropenia"),
+    ]
+
+    indication = forms.ChoiceField(
+        choices=INDICATION_CHOICES,
+        widget=forms.Select(
+            attrs={
+                "class": "form-select",
+                "_": """on change if my.options.selectedIndex is my.options.length-1 
+                        remove [@disabled] from #id_indication_name else 
+                        add [@disabled] to #id_indication_name""",
+            }
+        ),
+    )
+
+    indication_name = forms.CharField(
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-control",
+                "disabled": "true",
+            }
+        )
+    )
+    disease_system = forms.ChoiceField(
+        choices=DISEASE_CHOICES,
+        widget=forms.RadioSelect(attrs={"class": "form-check-input", "type": "radio"}),
+    )
+    comments = forms.CharField(
+        widget=forms.Textarea(attrs={"class": "form-control", "rows": 3})
+    )
