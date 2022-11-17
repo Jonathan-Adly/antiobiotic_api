@@ -114,9 +114,7 @@ class Drug(TimeStampedModel):
         return Indication.objects.filter(drug=self).values(
             "name",
             "disease_system",
-            "similar_terms",
             "comments",
-            "virus",
             "dosages__route",
             "dosages__weight_based_per_dose",
             "dosages__weight_based_freq",
