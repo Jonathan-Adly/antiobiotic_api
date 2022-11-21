@@ -1,5 +1,6 @@
 import itertools
 from django.db import models
+from django.conf import settings
 from django.contrib.postgres.fields import ArrayField
 from django.template.defaultfilters import slugify
 from django.db.models import Q
@@ -61,6 +62,7 @@ class TimeStampedModel(models.Model):
 
 
 class Drug(TimeStampedModel):
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     drug_name = models.CharField(max_length=100)
     brand_name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)

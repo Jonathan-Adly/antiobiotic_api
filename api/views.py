@@ -1,24 +1,29 @@
 import requests
 import json
 from django.shortcuts import render
-from rest_framework import generics
+from rest_framework import generics, permissions
+from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 from .models import Drug
 from .serializers import DrugSerializer
 from .forms import DrugForm, IndicationForm, FormulationForm
 
 
 class DrugList(generics.ListAPIView):
+    permission_classes = (permissions.IsAuthenticated,)
     queryset = Drug.objects.all()
     serializer_class = DrugSerializer
 
 
 class DrugDetail(generics.RetrieveAPIView):
+    permission_classes = (permissions.IsAuthenticated,)
     queryset = Drug.objects.all()
     serializer_class = DrugSerializer
 
     lookup_field = "slug"
 
 
+@login_required
 def data_entry(request):
 
     return render(
@@ -30,6 +35,15 @@ def data_entry(request):
             "indication_form": IndicationForm(),
         },
     )
+
+
+@require_POST
+@login_required
+def handle_drug_form(request):
+    pass
+    # form = DrugForm(request.POST)
+    # if form.is_valid():
+    # form
 
 
 def auto_complete(request):

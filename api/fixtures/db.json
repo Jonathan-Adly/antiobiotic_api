@@ -1,546 +1,520 @@
 [
-    {
-        "model": "admin.logentry",
-        "pk": 1,
-        "fields": {
-            "action_time": "2022-11-09T17:40:06.683Z",
-            "user": 1,
-            "content_type": 19,
-            "object_id": "1",
-            "object_repr": "Amoxicillin",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 2,
-        "fields": {
-            "action_time": "2022-11-09T17:41:14.207Z",
-            "user": 1,
-            "content_type": 18,
-            "object_id": "1",
-            "object_repr": "Amoxicillin: 125mg/5mL Liquid",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 3,
-        "fields": {
-            "action_time": "2022-11-09T17:41:43.185Z",
-            "user": 1,
-            "content_type": 18,
-            "object_id": "2",
-            "object_repr": "Amoxicillin: 200mg/5mL Liquid",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 4,
-        "fields": {
-            "action_time": "2022-11-09T17:43:19.077Z",
-            "user": 1,
-            "content_type": 20,
-            "object_id": "1",
-            "object_repr": "otitis-media",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 5,
-        "fields": {
-            "action_time": "2022-11-09T17:45:24.522Z",
-            "user": 1,
-            "content_type": 20,
-            "object_id": "2",
-            "object_repr": "urinary tract infection",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 6,
-        "fields": {
-            "action_time": "2022-11-09T17:58:19.979Z",
-            "user": 1,
-            "content_type": 17,
-            "object_id": "1",
-            "object_repr": "\n        Amoxicillin for otitis-media - po: \n        50mg/kg 3 time/s a day for \n        7days \n        ",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 7,
-        "fields": {
-            "action_time": "2022-11-09T17:59:03.459Z",
-            "user": 1,
-            "content_type": 17,
-            "object_id": "2",
-            "object_repr": "\n        Amoxicillin for urinary tract infection - po: \n        25mg/kg 2 time/s a day for \n        5days \n        ",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 8,
-        "fields": {
-            "action_time": "2022-11-09T18:00:12.806Z",
-            "user": 1,
-            "content_type": 15,
-            "object_id": "1",
-            "object_repr": "\n        Amoxicillin for otitis-media - po: \n        25mg/kg 3 time/s a day for \n        5days \n        ",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 9,
-        "fields": {
-            "action_time": "2022-11-09T18:00:36.500Z",
-            "user": 1,
-            "content_type": 16,
-            "object_id": "1",
-            "object_repr": "Bacteria object (1)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 10,
-        "fields": {
-            "action_time": "2022-11-10T16:05:10.556Z",
-            "user": 1,
-            "content_type": 17,
-            "object_id": "3",
-            "object_repr": "\n        Amoxicillin for otitis-media - im: \n        100mg/kg 1 time/s a day for \n        1time \n        ",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 11,
-        "fields": {
-            "action_time": "2022-11-10T16:07:29.207Z",
-            "user": 1,
-            "content_type": 18,
-            "object_id": "3",
-            "object_repr": "Amoxicillin: Amoxicillin 1000mg /1mL",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 12,
-        "fields": {
-            "action_time": "2022-11-10T16:40:16.039Z",
-            "user": 1,
-            "content_type": 16,
-            "object_id": "2",
-            "object_repr": "Bacteria object (2)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 13,
-        "fields": {
-            "action_time": "2022-11-10T17:53:10.384Z",
-            "user": 1,
-            "content_type": 19,
-            "object_id": "2",
-            "object_repr": "pipercilling-tazobactam",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"formulation\", \"object\": \"pipercilling-tazobactam: Pipercillin-tazobactam 4.5g/100mL\"}}, {\"added\": {\"name\": \"formulation\", \"object\": \"pipercilling-tazobactam: Pipercillin-tazobactam 2.25g/50mL\"}}, {\"added\": {\"name\": \"indication\", \"object\": \"pipercilling-tazobactam for Sepsis\"}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 14,
-        "fields": {
-            "action_time": "2022-11-10T17:57:31.806Z",
-            "user": 1,
-            "content_type": 16,
-            "object_id": "3",
-            "object_repr": "Bacteria object (3)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 15,
-        "fields": {
-            "action_time": "2022-11-10T17:58:45.116Z",
-            "user": 1,
-            "content_type": 19,
-            "object_id": "2",
-            "object_repr": "pipercilling-tazobactam",
-            "action_flag": 2,
-            "change_message": "[]"
-        }
-    },
-    {
-        "model": "sessions.session",
-        "pk": "6icx2o0l5ll0fjfav1zhuj1jpkm5280a",
-        "fields": {
-            "session_data": ".eJxVjEEOwiAQRe_C2hAoHYou3fcMZJgZpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uLsur0yxLSU8ou-IHlXjXVssxT0nuiD9v0WFle16P9O8jY8rY-Gw9M3gXPyGgIUJgTigRDG4a-Ey-BBgQrXe8gWWSCGwC6gQOh-nwBDUE5FQ:1osoxk:XnVByRv-UGamtfmOb9YrcFe3rPwR_tprKckjGR31qxA",
-            "expire_date": "2022-11-23T17:34:08.348Z"
-        }
-    },
-    {
-        "model": "sites.site",
-        "pk": 1,
-        "fields": {
-            "domain": "example.com",
-            "name": "example.com"
-        }
-    },
-    {
-        "model": "accounts.customuser",
-        "pk": 1,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$ffHiBaSGONyRsBtk0RQciq$dTCJi5xGwdQETNTfSgcC5O1v87MxrT1196gKppNNoHg=",
-            "last_login": "2022-11-09T17:34:08.346Z",
-            "is_superuser": true,
-            "username": "test",
-            "first_name": "",
-            "last_name": "",
-            "email": "test@test.com",
-            "is_staff": true,
-            "is_active": true,
-            "date_joined": "2022-11-09T17:33:59.781Z",
-            "stripe_cust": "",
-            "stripe_sub": "",
-            "subscribe_to_emails": true,
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "api.drug",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T17:40:06.677Z",
-            "updated_at": "2022-11-09T17:40:06.677Z",
-            "drug_name": "Amoxicillin",
-            "brand_name": "Amoxil",
-            "slug": "amoxicillin",
-            "is_sulfa": false,
-            "is_penicillin": true,
-            "is_cephalosporin": false,
-            "similar_terms": "[\"amox\"]",
-            "is_combo": false,
-            "hepatic_adjustment": false,
-            "hepatic_comments": "",
-            "renal_adjustment": true,
-            "is_generic": true
-        }
-    },
-    {
-        "model": "api.drug",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.368Z",
-            "updated_at": "2022-11-10T17:58:45.114Z",
-            "drug_name": "pipercilling-tazobactam",
-            "brand_name": "Zosyn",
-            "slug": "pipercilling-tazobactam",
-            "is_sulfa": false,
-            "is_penicillin": true,
-            "is_cephalosporin": false,
-            "similar_terms": "[\"piper\"]",
-            "is_combo": true,
-            "hepatic_adjustment": true,
-            "hepatic_comments": "Use with Caution",
-            "renal_adjustment": true,
-            "is_generic": true
-        }
-    },
-    {
-        "model": "api.formulation",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T17:41:14.204Z",
-            "updated_at": "2022-11-09T17:41:14.204Z",
-            "drug": 1,
-            "route": "po",
-            "label": "125mg/5mL Liquid",
-            "dosage_form": "suspension/liquid",
-            "is_pill": false,
-            "value": 25
-        }
-    },
-    {
-        "model": "api.formulation",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-09T17:41:43.183Z",
-            "updated_at": "2022-11-09T17:41:43.183Z",
-            "drug": 1,
-            "route": "po",
-            "label": "200mg/5mL Liquid",
-            "dosage_form": "suspension/liquid",
-            "is_pill": false,
-            "value": 40
-        }
-    },
-    {
-        "model": "api.formulation",
-        "pk": 3,
-        "fields": {
-            "created_at": "2022-11-10T16:07:29.205Z",
-            "updated_at": "2022-11-10T16:07:29.205Z",
-            "drug": 1,
-            "route": "im",
-            "label": "Amoxicillin 1000mg /1mL",
-            "dosage_form": "im",
-            "is_pill": false,
-            "value": 1000
-        }
-    },
-    {
-        "model": "api.formulation",
-        "pk": 4,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.374Z",
-            "updated_at": "2022-11-10T17:53:10.374Z",
-            "drug": 2,
-            "route": "iv",
-            "label": "Pipercillin-tazobactam 4.5g/100mL",
-            "dosage_form": "iv",
-            "is_pill": false,
-            "value": 45
-        }
-    },
-    {
-        "model": "api.formulation",
-        "pk": 5,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.377Z",
-            "updated_at": "2022-11-10T17:53:10.377Z",
-            "drug": 2,
-            "route": "iv",
-            "label": "Pipercillin-tazobactam 2.25g/50mL",
-            "dosage_form": "iv",
-            "is_pill": false,
-            "value": 45
-        }
-    },
-    {
-        "model": "api.indication",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T17:43:19.065Z",
-            "updated_at": "2022-11-09T17:43:19.065Z",
-            "name": "otitis-media",
-            "drug": 1,
-            "disease_system": "heent",
-            "similar_terms": "[\"oti\"]",
-            "comments": "",
-            "virus": false
-        }
-    },
-    {
-        "model": "api.indication",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-09T17:45:24.517Z",
-            "updated_at": "2022-11-09T17:45:24.517Z",
-            "name": "urinary tract infection",
-            "drug": 1,
-            "disease_system": "gu",
-            "similar_terms": "[\"uti\"]",
-            "comments": "No symptoms and positive culture? You probably don't need to treat it!",
-            "virus": false
-        }
-    },
-    {
-        "model": "api.indication",
-        "pk": 3,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.377Z",
-            "updated_at": "2022-11-10T17:53:10.377Z",
-            "name": "Sepsis",
-            "drug": 2,
-            "disease_system": "general",
-            "similar_terms": "[\"sepsis\"]",
-            "comments": "treat within 4 hours",
-            "virus": false
-        }
-    },
-    {
-        "model": "api.dosage",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T17:58:19.972Z",
-            "updated_at": "2022-11-09T17:58:19.972Z",
-            "indication": 1,
-            "route": "po",
-            "weight_based_per_dose": 50.0,
-            "weight_based_freq": 3,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 7,
-            "duration_unit": "days",
-            "adult_per_dose": 500.0,
-            "adult_freq": 3,
-            "adult_dose_unit": "mg"
-        }
-    },
-    {
-        "model": "api.dosage",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-09T17:59:03.456Z",
-            "updated_at": "2022-11-09T17:59:03.457Z",
-            "indication": 2,
-            "route": "po",
-            "weight_based_per_dose": 25.0,
-            "weight_based_freq": 2,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 5,
-            "duration_unit": "days",
-            "adult_per_dose": 500.0,
-            "adult_freq": 2,
-            "adult_dose_unit": "mg"
-        }
-    },
-    {
-        "model": "api.dosage",
-        "pk": 3,
-        "fields": {
-            "created_at": "2022-11-10T16:05:10.552Z",
-            "updated_at": "2022-11-10T16:05:10.552Z",
-            "indication": 1,
-            "route": "im",
-            "weight_based_per_dose": 100.0,
-            "weight_based_freq": 1,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 1,
-            "duration_unit": "time",
-            "adult_per_dose": 1000.0,
-            "adult_freq": 1,
-            "adult_dose_unit": "mg"
-        }
-    },
-    {
-        "model": "api.dosage",
-        "pk": 4,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.379Z",
-            "updated_at": "2022-11-10T17:58:45.115Z",
-            "indication": 3,
-            "route": "iv",
-            "weight_based_per_dose": 45.0,
-            "weight_based_freq": 4,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 14,
-            "duration_unit": "day",
-            "adult_per_dose": 4.5,
-            "adult_freq": 4,
-            "adult_dose_unit": "g"
-        }
-    },
-    {
-        "model": "api.renaldose",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T18:00:12.801Z",
-            "updated_at": "2022-11-09T18:00:12.801Z",
-            "indication": 1,
-            "crcl_min": 30,
-            "crcl_max": 60,
-            "route": "po",
-            "weight_based_per_dose": 25.0,
-            "weight_based_freq": 3,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 5,
-            "duration_unit": "days",
-            "adult_per_dose": 250.0,
-            "adult_freq": 3,
-            "adult_dose_unit": "mg"
-        }
-    },
-    {
-        "model": "api.renaldose",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-10T17:53:10.381Z",
-            "updated_at": "2022-11-10T17:58:45.116Z",
-            "indication": 3,
-            "crcl_min": 20,
-            "crcl_max": 39,
-            "route": "iv",
-            "weight_based_per_dose": 45.0,
-            "weight_based_freq": 3,
-            "weight_based_dosing_unit": "mg/kg",
-            "duration": 14,
-            "duration_unit": "day",
-            "adult_per_dose": 4.5,
-            "adult_freq": 3,
-            "adult_dose_unit": "g"
-        }
-    },
-    {
-        "model": "api.bacteria",
-        "pk": 1,
-        "fields": {
-            "created_at": "2022-11-09T18:00:36.488Z",
-            "updated_at": "2022-11-09T18:00:36.488Z",
-            "name": "E. coli",
-            "group": "gram-",
-            "possible_drugs": [
-                1
-            ],
-            "possible_indications": [
-                2
-            ]
-        }
-    },
-    {
-        "model": "api.bacteria",
-        "pk": 2,
-        "fields": {
-            "created_at": "2022-11-10T16:40:16.027Z",
-            "updated_at": "2022-11-10T16:40:16.027Z",
-            "name": "MSSA",
-            "group": "gram+",
-            "possible_drugs": [
-                1
-            ],
-            "possible_indications": [
-                1
-            ]
-        }
-    },
-    {
-        "model": "api.bacteria",
-        "pk": 3,
-        "fields": {
-            "created_at": "2022-11-10T17:57:31.795Z",
-            "updated_at": "2022-11-10T17:57:31.795Z",
-            "name": "Psuedomoas",
-            "group": "gram-",
-            "possible_drugs": [
-                2
-            ],
-            "possible_indications": [
-                3
-            ]
-        }
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-11-09T17:40:06.683Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "Amoxicillin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-11-09T17:41:14.207Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "1",
+        "object_repr": "Amoxicillin: 125mg/5mL Liquid",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-11-09T17:41:43.185Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "2",
+        "object_repr": "Amoxicillin: 200mg/5mL Liquid",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-11-09T17:43:19.077Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "otitis-media",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-11-09T17:45:24.522Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "urinary tract infection",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-11-09T17:58:19.979Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "\n        Amoxicillin for otitis-media - po: \n        50mg/kg 3 time/s a day for \n        7days \n        ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-11-09T17:59:03.459Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "\n        Amoxicillin for urinary tract infection - po: \n        25mg/kg 2 time/s a day for \n        5days \n        ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-11-09T18:00:12.806Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "\n        Amoxicillin for otitis-media - po: \n        25mg/kg 3 time/s a day for \n        5days \n        ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-11-09T18:00:36.500Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Bacteria object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-11-10T16:05:10.556Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "\n        Amoxicillin for otitis-media - im: \n        100mg/kg 1 time/s a day for \n        1time \n        ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-11-10T16:07:29.207Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "3",
+        "object_repr": "Amoxicillin: Amoxicillin 1000mg /1mL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-11-10T16:40:16.039Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Bacteria object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-11-10T17:53:10.384Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "pipercilling-tazobactam",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"formulation\", \"object\": \"pipercilling-tazobactam: Pipercillin-tazobactam 4.5g/100mL\"}}, {\"added\": {\"name\": \"formulation\", \"object\": \"pipercilling-tazobactam: Pipercillin-tazobactam 2.25g/50mL\"}}, {\"added\": {\"name\": \"indication\", \"object\": \"pipercilling-tazobactam for Sepsis\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-11-10T17:57:31.806Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "Bacteria object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-11-10T17:58:45.116Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "pipercilling-tazobactam",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "80kwq96v4l78jnwa61x8j7yiv9cjsqjw",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoHYou3fcMZJgZpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uLsur0yxLSU8ou-IHlXjXVssxT0nuiD9v0WFle16P9O8jY8rY-Gw9M3gXPyGgIUJgTigRDG4a-Ey-BBgQrXe8gWWSCGwC6gQOh-nwBDUE5FQ:1otCDi:gnpZbU4MYAavtqZTRRVM8BfiaAD89R4rl31CaNHx53M",
+        "expire_date": "2022-11-24T18:24:10.830Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "igneqpd5hvc6p7iu2ba3ro7mw3msi60j",
+    "fields": {
+        "session_data": ".eJxVjUEOgjAQRe_StSEtMKWw04s0w8wYGkkxtCQa490thoUu__sz77-Uxy1Pfkuy-sBqUEadftmIdJO4FzjPO66QaNlirr43R52qc0kScyDMYYmX4-tPNWGaiqfXFphs4ywjoyZAYR5RxGkqGNparDjqEIzUbQOjQSa4AmDTsSPcpUlSKjNeHvewPtVgat1brd8fnXdF-A:1oxCop:L0jZS2fVwxGZR9MjQ_Do1XNhEnkdH3_Gm4yMyhCWLnU",
+        "expire_date": "2022-12-05T19:51:03.715Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "whasp7bdiavy2y9x5yf7cr38s4vtu2e6",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoHYou3fcMZJgZpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uLsur0yxLSU8ou-IHlXjXVssxT0nuiD9v0WFle16P9O8jY8rY-Gw9M3gXPyGgIUJgTigRDG4a-Ey-BBgQrXe8gWWSCGwC6gQOh-nwBDUE5FQ:1ouzuP:kyQCRAxBKRWdM3AgdD3tiPSoNroouETlkGX7kOMSKt8",
+        "expire_date": "2022-11-29T17:39:41.592Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "accounts.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$ffHiBaSGONyRsBtk0RQciq$dTCJi5xGwdQETNTfSgcC5O1v87MxrT1196gKppNNoHg=",
+        "last_login": "2022-11-21T19:51:03.713Z",
+        "is_superuser": true,
+        "username": "test",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@test.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-11-09T17:33:59.781Z",
+        "stripe_cust": "",
+        "stripe_sub": "",
+        "subscribe_to_emails": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.drug",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-11-09T17:40:06.677Z",
+        "updated_at": "2022-11-09T17:40:06.677Z",
+        "owner": 1,
+        "drug_name": "Amoxicillin",
+        "brand_name": "Amoxil",
+        "slug": "amoxicillin",
+        "is_sulfa": false,
+        "is_penicillin": true,
+        "is_cephalosporin": false,
+        "similar_terms": "[\"amox\"]",
+        "is_combo": false,
+        "hepatic_adjustment": false,
+        "hepatic_comments": "",
+        "renal_adjustment": true,
+        "renal_comments": "",
+        "is_generic": true
+    }
+},
+{
+    "model": "api.drug",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-11-10T17:53:10.368Z",
+        "updated_at": "2022-11-10T17:58:45.114Z",
+        "owner": 1,
+        "drug_name": "pipercilling-tazobactam",
+        "brand_name": "Zosyn",
+        "slug": "pipercilling-tazobactam",
+        "is_sulfa": false,
+        "is_penicillin": true,
+        "is_cephalosporin": false,
+        "similar_terms": "[\"piper\"]",
+        "is_combo": true,
+        "hepatic_adjustment": true,
+        "hepatic_comments": "Use with Caution",
+        "renal_adjustment": true,
+        "renal_comments": "",
+        "is_generic": true
+    }
+},
+{
+    "model": "api.formulation",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-11-09T17:41:14.204Z",
+        "updated_at": "2022-11-09T17:41:14.204Z",
+        "drug": 1,
+        "route": "po",
+        "label": "125mg/5mL Liquid",
+        "dosage_form": "suspension/liquid",
+        "is_pill": false,
+        "value": 25
+    }
+},
+{
+    "model": "api.formulation",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-11-09T17:41:43.183Z",
+        "updated_at": "2022-11-09T17:41:43.183Z",
+        "drug": 1,
+        "route": "po",
+        "label": "200mg/5mL Liquid",
+        "dosage_form": "suspension/liquid",
+        "is_pill": false,
+        "value": 40
+    }
+},
+{
+    "model": "api.formulation",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-11-10T16:07:29.205Z",
+        "updated_at": "2022-11-10T16:07:29.205Z",
+        "drug": 1,
+        "route": "im",
+        "label": "Amoxicillin 1000mg /1mL",
+        "dosage_form": "im",
+        "is_pill": false,
+        "value": 1000
+    }
+},
+{
+    "model": "api.formulation",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-11-10T17:53:10.374Z",
+        "updated_at": "2022-11-10T17:53:10.374Z",
+        "drug": 2,
+        "route": "iv",
+        "label": "Pipercillin-tazobactam 4.5g/100mL",
+        "dosage_form": "iv",
+        "is_pill": false,
+        "value": 45
+    }
+},
+{
+    "model": "api.formulation",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-11-10T17:53:10.377Z",
+        "updated_at": "2022-11-10T17:53:10.377Z",
+        "drug": 2,
+        "route": "iv",
+        "label": "Pipercillin-tazobactam 2.25g/50mL",
+        "dosage_form": "iv",
+        "is_pill": false,
+        "value": 45
+    }
+},
+{
+    "model": "api.indication",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-11-09T17:43:19.065Z",
+        "updated_at": "2022-11-09T17:43:19.065Z",
+        "name": "otitis-media",
+        "drug": 1,
+        "disease_system": "heent",
+        "comments": ""
+    }
+},
+{
+    "model": "api.indication",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-11-09T17:45:24.517Z",
+        "updated_at": "2022-11-09T17:45:24.517Z",
+        "name": "urinary tract infection",
+        "drug": 1,
+        "disease_system": "gu",
+        "comments": "No symptoms and positive culture? You probably don't need to treat it!"
+    }
+},
+{
+    "model": "api.indication",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-11-10T17:53:10.377Z",
+        "updated_at": "2022-11-10T17:53:10.377Z",
+        "name": "Sepsis",
+        "drug": 2,
+        "disease_system": "general",
+        "comments": "treat within 4 hours"
+    }
+},
+{
+    "model": "api.dosage",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-11-09T17:58:19.972Z",
+        "updated_at": "2022-11-09T17:58:19.972Z",
+        "indication": 1,
+        "route": "po",
+        "weight_based_per_dose": 50.0,
+        "weight_based_freq": 3,
+        "weight_based_dosing_unit": "mg/kg",
+        "duration": 7,
+        "duration_unit": "days",
+        "adult_per_dose": 500.0,
+        "adult_freq": 3,
+        "adult_dose_unit": "mg"
+    }
+},
+{
+    "model": "api.dosage",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-11-09T17:59:03.456Z",
+        "updated_at": "2022-11-09T17:59:03.457Z",
+        "indication": 2,
+        "route": "po",
+        "weight_based_per_dose": 25.0,
+        "weight_based_freq": 2,
+        "weight_based_dosing_unit": "mg/kg",
+        "duration": 5,
+        "duration_unit": "days",
+        "adult_per_dose": 500.0,
+        "adult_freq": 2,
+        "adult_dose_unit": "mg"
+    }
+},
+{
+    "model": "api.dosage",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-11-10T16:05:10.552Z",
+        "updated_at": "2022-11-10T16:05:10.552Z",
+        "indication": 1,
+        "route": "im",
+        "weight_based_per_dose": 100.0,
+        "weight_based_freq": 1,
+        "weight_based_dosing_unit": "mg/kg",
+        "duration": 1,
+        "duration_unit": "time",
+        "adult_per_dose": 1000.0,
+        "adult_freq": 1,
+        "adult_dose_unit": "mg"
+    }
+},
+{
+    "model": "api.dosage",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-11-10T17:53:10.379Z",
+        "updated_at": "2022-11-10T17:58:45.115Z",
+        "indication": 3,
+        "route": "iv",
+        "weight_based_per_dose": 45.0,
+        "weight_based_freq": 4,
+        "weight_based_dosing_unit": "mg/kg",
+        "duration": 14,
+        "duration_unit": "day",
+        "adult_per_dose": 4.5,
+        "adult_freq": 4,
+        "adult_dose_unit": "g"
+    }
+},
+{
+    "model": "api.bacteria",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-11-09T18:00:36.488Z",
+        "updated_at": "2022-11-09T18:00:36.488Z",
+        "name": "E. coli",
+        "group": "gram-",
+        "possible_drugs": [
+            1
+        ],
+        "possible_indications": [
+            2
+        ]
+    }
+},
+{
+    "model": "api.bacteria",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-11-10T16:40:16.027Z",
+        "updated_at": "2022-11-10T16:40:16.027Z",
+        "name": "MSSA",
+        "group": "gram+",
+        "possible_drugs": [
+            1
+        ],
+        "possible_indications": [
+            1
+        ]
+    }
+},
+{
+    "model": "api.bacteria",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-11-10T17:57:31.795Z",
+        "updated_at": "2022-11-10T17:57:31.795Z",
+        "name": "Psuedomoas",
+        "group": "gram-",
+        "possible_drugs": [
+            2
+        ],
+        "possible_indications": [
+            3
+        ]
+    }
+}
 ]

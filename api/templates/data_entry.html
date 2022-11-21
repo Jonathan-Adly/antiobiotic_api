@@ -18,7 +18,10 @@
             <div class="row min-vh-100">
                 <div class="col-sm-3 my-auto">
                     <h2 class="mb-3"> Add New Drug </h2>
-                    <form autocomplete="off"> 
+                    <form autocomplete="off"
+                      hx-post= "{% url 'drug_form' %}"
+                      
+                      > 
                        {% include 'components/drug_form.html' %}
                     </form> 
                 </div>
