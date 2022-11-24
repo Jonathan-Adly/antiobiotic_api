@@ -130,12 +130,13 @@ class FormulationForm(forms.ModelForm):
 
 class IndicationForm(forms.Form):
 
-    INDICATION_CHOICES = list(
-        Indication.objects.all().values_list(
-            "pk",
-            "name",
-        )
-    ) + [(0, "Not in this list")]
+    #INDICATION_CHOICES = list(
+        #Indication.objects.all().values_list(
+        #    "pk",
+        #    "name",
+        #)
+    #) + [(0, "Not in this list")]
+    INDICATION_CHOICES = [(0, "dasda")]
     DISEASE_CHOICES = [
         ("neuro", "Neuro"),
         ("heent", "HEENT"),
